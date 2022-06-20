@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5d96b25e-73c6-43fe-8f40-7a306c2d33d1": {
+      "ProjectGuid": "5d96b25e-73c6-43fe-8f40-7a306c2d33d1",
+      "DisplayName": "Umbraco10Demo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -24,3 +24,7 @@
 
 # Ignore the Models Builder models out of date flag
 **/App_Data/Models/ood.flag
+/.vs/Umbraco10Demo/config
+/.vs/Umbraco10Demo/DesignTimeBuild
+/.vs/Umbraco10Demo/v16
+/.vs/Umbraco10Demo/v17

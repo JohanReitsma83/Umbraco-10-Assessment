@@ -1,0 +1,44 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Extensions
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<People>
+@{
+    Layout = "master.cshtml";
+}
+@{
+    void SocialLink(string content, string service)
+    {
+        if (!string.IsNullOrEmpty(content))
+        {
+            ; //semicolon needed otherwise <a> cannot be resolved
+            <a class="employee-grid__item__contact-item" href="http://@(service).com/@content">@service</a>
+        }
+    }
+}
+
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+
+<section class="section">
+
+    <div class="container">
+        <div class="employee-grid">
+            <!-- TODO: bedoeling is alle onderliggende pagina's hier uit te lezen en de data uit het cms te laten komen. Dit kan je doen met logica van Model.Children<??>() plaats het de html per employee in een aparte partial. ' -->
+            <div class="employee-grid__item">
+                <div class="employee-grid__item__image" style="background-image: url('/media/dsypff0x/laura_weatherhead.jpg')"></div>
+                <div class="employee-grid__item__details">
+                    <h3 class="employee-grid__item__name">Laura Weatherhead</h3>
+                    <div class="employee-grid__item__contact">
+                    </div>
+                </div>
+            </div>
+            <div class="employee-grid__item">
+                <div class="employee-grid__item__image" style="background-image: url('/media/doxkuvnu/ravi-motha.jpg')"></div>
+                <div class="employee-grid__item__details">
+                    <h3 class="employee-grid__item__name">Ravi Motha</h3>
+                    <div class="employee-grid__item__contact">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
