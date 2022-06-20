@@ -4,6 +4,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="umbraco\Data\TEMP\**" />
+    <Content Remove="umbraco\Data\TEMP\**" />
+    <EmbeddedResource Remove="umbraco\Data\TEMP\**" />
+    <None Remove="umbraco\Data\TEMP\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="10.0.0" />
@@ -23,6 +29,12 @@
 
   <ItemGroup>
     <Folder Include="wwwroot" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="umbraco\Data\Umbraco.sqlite.db" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-shm" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-wal" />
   </ItemGroup>
 
   <!-- Keep this as false if ModelsBuilder mode is InMemoryAuto -->
